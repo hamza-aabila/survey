@@ -79,4 +79,16 @@ $(".previous").click(function(){
 
 $(".submit").click(function(){
 	return false;
-})
+});
+
+
+$( "input:radio" ).on( "change", function() {
+if($(this).val() != "other")
+{ 
+  $(this).closest('.checkbox').find('textarea').hide();
+}
+else{
+    $(this).closest('.checkbox').find('textarea').show();
+  }
+});
+

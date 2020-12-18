@@ -37,17 +37,19 @@
         <label class="check" for=""><input type="radio" name="destinataire" value="adulte" /> adulte</label>
         <label class="check" for=""><input type="radio" name="destinataire" value="tout public" /> tout public</label>
         <label class="check" for=""><input type="radio" name="destinataire" value="public ciblé" /> public ciblé</label>
-        <label class="check" for=""><input type="radio" /> à préciser</label>
+        <label class="check" for=""><input type="radio" class="radio" name="destinataire" value="other" /> à préciser</label>
+        <textarea class="hide" name="destinataire" placeholder="préciser"></textarea>
       </div>
-      <textarea name="destinataire" placeholder="préciser"></textarea>
+      <textarea class="hide" name="destinataire" id="destinataire" placeholder="préciser"></textarea>
     <label for="">Objet principal de la médiation </label>
     <div class="checkbox">
         <label class="check" for=""><input type="radio" name="objet_principal" value="spectacle/évènement" /> spectacle/évènement</label>
         <label class="check" for=""><input type="radio" name="objet_principal" value="savoir et savoir-faire disciplinaire" /> savoir et savoir-faire disciplinaire</label>
         <label class="check" for=""><input type="radio" name="objet_principal" value="organisme/environnement" /> organisme/environnement</label>
-        <label class="check" for=""><input type="radio" /> compétences tierces, à préciser</label>
+        <label class="check" for=""><input type="radio" name="objet_principal" class="radio" value="other"/> compétences tierces, à préciser</label>
+        <textarea class="hide" name="objet_principal" placeholder="préciser"></textarea>
       </div>
-      <textarea name="objet_principal" placeholder="préciser"></textarea>
+      
       <label for="">Lieu de la médiation </label>
       <input type="text" name="lieux_sceniques" placeholder="lieux scéniques" />
       <input type="text" name="lieux_non_sceniques" placeholder="lieux non-scéniques" />
@@ -63,9 +65,9 @@
       <label class="check" for=""><input type="radio" name="support_mediation" /> smartphone</label>
       <label class="check" for=""><input type="radio" name="support_mediation" /> tablette</label>
       <label class="check" for=""><input type="radio" name="support_mediation" /> ordinateur</label>
-      <label class="check" for=""><input type="radio" /> autre dispositif, à préciser</label>
+      <label class="check" for=""><input type="radio" class="radio" name="support_mediation" value="other"/> autre dispositif, à préciser</label>
+      <textarea class="hide" name="support_mediation" placeholder="préciser"></textarea>
     </div>
-    <textarea name="support_mediation" placeholder="préciser"></textarea>
       <label for="">Plateforme de la médiation</label>
       <div class="checkbox">
       <label class="check" for=""><input type="radio" name="plateforme_mediation" /> aucun</label>
@@ -73,9 +75,9 @@
       <label class="check" for=""><input type="radio" name="plateforme_mediation" /> Facebook</label>
       <label class="check" for=""><input type="radio" name="plateforme_mediation" /> Instagram</label>
       <label class="check" for=""><input type="radio" name="plateforme_mediation" /> YouTube</label>
-      <label class="check" for=""><input type="radio"  /> autre dispositif, à préciser</label>
+      <label class="check" for=""><input type="radio" name="plateforme_mediation" value="other" /> autre dispositif, à préciser</label>
+      <textarea class="hide" name="plateforme_mediation" placeholder="préciser"></textarea>
     </div>
-    <textarea name="plateforme_mediation" placeholder="préciser"></textarea>
     <label for="">Mode sémiotique </label>
       <div class="checkbox">
       <label class="check" for=""><input type="checkbox" name="mode_semiotique" /> texte </label>
@@ -93,13 +95,13 @@
       </select>
       <label for="">Présence visible/audible/repérable d’un agent de médiation par le  public</label>
       <div class="checkbox">
-      <label class="check" for=""><input type="checkbox" name="presence" /> non</label>
-      <label class="check" for=""><input type="checkbox" name="presence" /> médiateur</label>
-      <label class="check" for=""><input type="checkbox" name="presence" /> artiste</label>
-      <label class="check" for=""><input type="checkbox" name="presence" /> membre de l’équipe</label>
-      <label class="check" for=""><input type="checkbox" /> autre, à préciser</label>
+      <label class="check" for=""><input type="radio" name="presence" /> non</label>
+      <label class="check" for=""><input type="radio" name="presence" /> médiateur</label>
+      <label class="check" for=""><input type="radio" name="presence" /> artiste</label>
+      <label class="check" for=""><input type="radio" name="presence" /> membre de l’équipe</label>
+      <label class="check" for=""><input type="radio" class="radio" name="presence" value="other"/> autre, à préciser</label>
+      <textarea class="hide" name="presence" placeholder="préciser"></textarea>
     </div>
-    <textarea name="presence" placeholder="préciser"></textarea>
     <label for="producteur_mediation">Producteur de la médiation (organisme)</label>
       <select name="producteur_mediation" id="producteur_mediation">
           <option value="oui">oui DynamO Théâtre</option>

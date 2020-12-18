@@ -57,18 +57,28 @@ h1{
 	font-size: 13px;
 }
 label{
-	text-align:left;
-	display: block;
-	font-weight: 700;
+    text-align: left;
+    display: block;
+    font-weight: 700;
+    margin: 10px 0;
 }
 .checkbox {
     display: flex;
+    flex-direction: column;
 }
 label.check{
-    text-align: left;
     display: flex;
     flex: auto;
-    align-items: center;
+    align-items: baseline;
+    margin-bottom: 0;
+}
+#msform .hide{
+    display: none;
+}
+#msform input[type='checkbox'], #msform input[type='radio'] {
+    width: auto;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 /*buttons*/
 #msform .action-button {
