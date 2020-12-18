@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Atelier autour de la démarche artistique de DynamO Théâtre : Théâtre de mouvement acrobatique ou jeu clownesque.</h1>
+    <!-- multistep form -->
+<form id="msform">
+    <!-- progressbar -->
+    <ul id="progressbar">
+      <li class="active">Personal Details</li>
+      <li>Survey</li>
+    </ul>
+    <!-- fieldsets -->
+    <fieldset>
+      <h2 class="fs-title">Personal Details</h2>
+      <h3 class="fs-subtitle">This is step 1</h3>
+      <input type="text" name="name" placeholder="Full Name" />
+      <input type="email" name="email" placeholder="E-mail" />
+      <input type="text" name="university" placeholder="university" />
+      <button type="button" class="next action-button" >Next</button>
+    </fieldset>
+    <fieldset>
+      <h2 class="fs-title">Personal Details</h2>
+      <label for="">Discipline</label>
+      <select name="discipline" id="">
+          <option value="théâtre">théâtre</option>
+          <option value="danse">danse</option>
+          <option value="cirque">cirque</option>
+      </select>
+      <label for="">Destinataire</label>
+      <select name="destinataire" id="">
+        <option value="adulte">adulte</option>
+        <option value="tout public">tout public</option>
+        <option value="public ciblé">public ciblé</option>
+        <option value="à préciser">à préciser</option>
+    </select>
+    <label for="">Objet principal de la médiation </label>
+    <div class="checkbox">
+        <label class="check" for=""><input type="checkbox" /> spectacle/évènement</label>
+        <label class="check" for=""><input type="checkbox" /> savoir et savoir-faire disciplinaire</label>
+        <label class="check" for=""><input type="checkbox" /> organisme/environnement</label>
+        <label class="check" for=""><input type="checkbox" /> compétences tierces, à préciser</label>
+      </div>
+    <textarea placeholder="préciser"></textarea>
+      <label for="">Lieu de la médiation </label>
+      <input type="text" name="fname" placeholder="lieux scéniques " />
+      <input type="text" name="lname" placeholder="lieux non-scéniques" />
+      <label for="">Type de la médiation </label>
+      <select name="" id="">
+          <option value="">présentielle </option>
+          <option value="">virtuelle</option>
+          <option value="">composite</option>
+      </select>
+      <label for="">Support de la médiation</label>
+      <div class="checkbox">
+      <label class="check" for=""><input type="checkbox" /> aucun</label>
+      <label class="check" for=""><input type="checkbox" /> smartphone</label>
+      <label class="check" for=""><input type="checkbox" /> tablette</label>
+      <label class="check" for=""><input type="checkbox" /> ordinateur</label>
+      <label class="check" for=""><input type="checkbox" /> autre dispositif, à préciser</label>
+    </div>
+    <textarea placeholder="préciser"></textarea>
+      <label for="">Plateforme de la médiation</label>
+      <div class="checkbox">
+      <label class="check" for=""><input type="checkbox" /> aucun</label>
+      <label class="check" for=""><input type="checkbox" /> site Web</label>
+      <label class="check" for=""><input type="checkbox" /> Facebook</label>
+      <label class="check" for=""><input type="checkbox" /> Instagram</label>
+      <label class="check" for=""><input type="checkbox" /> YouTube</label>
+      <label class="check" for=""><input type="checkbox" /> autre dispositif, à préciser</label>
+    </div>
+    <textarea placeholder="préciser"></textarea>
+    <label for="">Mode sémiotique </label>
+      <div class="checkbox">
+      <label class="check" for=""><input type="checkbox" /> texte </label>
+      <label class="check" for=""><input type="checkbox" /> image</label>
+      <label class="check" for=""><input type="checkbox" /> son</label>
+      <label class="check" for=""><input type="checkbox" /> verbal</label>
+      <label class="check" for=""><input type="checkbox" /> non-verbal</label>
+    </div>
+    <label for="">Temps de médiation</label>
+      <select name="" id="">
+          <option value="">avant le spectacle </option>
+          <option value="">pendant le spectacle</option>
+          <option value="">après le spectacle</option>
+          <option value="">égard au spectacle</option>
+      </select>
+      <label for="">Présence visible/audible/repérable d’un agent de médiation par le  public</label>
+      <div class="checkbox">
+      <label class="check" for=""><input type="checkbox" /> non</label>
+      <label class="check" for=""><input type="checkbox" /> médiateur</label>
+      <label class="check" for=""><input type="checkbox" /> artiste</label>
+      <label class="check" for=""><input type="checkbox" /> membre de l’équipe</label>
+      <label class="check" for=""><input type="checkbox" /> autre, à préciser</label>
+    </div>
+    <textarea placeholder="préciser"></textarea>
+    <label for="">Producteur de la médiation (organisme)</label>
+      <select name="" id="">
+          <option value="">oui DynamO Théâtre</option>
+          <option value="">non</option>
+      </select>
+      <label for="">Ville</label>
+      <input type="text" name="phone" placeholder="Ville" />
+      <label for="">Partenaire</label>
+      <select name="" id="">
+          <option value="">oui</option>
+          <option value="">non</option>
+      </select>
+      <input type="text" name="phone" placeholder="Nom du partenaire" />
+      <input type="text" name="phone" placeholder="Ville" />
+      <label for="">Année de début de l’activité</label>
+      <select name="" id="">
+          <option value="">connue</option>
+          <option value="">inconnue</option>
+      </select>
+      <label for="">Année de début de l’activité</label>
+      <select name="" id="">
+          <option value="">oui</option>
+          <option value="">non</option>
+      </select>
+      <label for="">Degré d’interactivité</label>
+      <select name="" id="">
+          <option value="">diffusion/interprétation</option>
+          <option value="">réaction/commentaire</option>
+          <option value="">participation/contribution</option>
+          <option value="">immersion/co-auctorialité</option>
+      </select>
+      
+      <button type="button" class="previous action-button">Previous</button>
+      <button type="submit" class="submit action-button">Submit</button>
+    </fieldset>
+  </form>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
